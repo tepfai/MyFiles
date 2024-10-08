@@ -2970,6 +2970,7 @@ spawn(function()
 ToggleTradeBone = Tabs.Shop:AddToggle("ToggleTradeBone", {Title = "Auto Random Bone", Default = _G.Auto_Random_Bone })
 ToggleTradeBone:OnChanged(function(Value)
     _G.Auto_Random_Bone = Value
+    saveSettings()
 end)
 spawn(function()
    while wait() do
