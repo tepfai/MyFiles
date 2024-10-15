@@ -2247,4 +2247,5 @@ game.StarterGui:SetCore("SendNotification", {
       Icon = "";
       Title = "Hiru Hub", 
       Text = "Successfully";
-})      	    
+})
+print("Loading Script Success")
