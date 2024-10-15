@@ -862,7 +862,7 @@ Tabs.infor:AddButton({
         Title = "Discord Hiru Hub",
         Description = "Copy Link Discord",
         Callback = function()
-        setclipboard("https://discord.gg/SKnejqct")
+        setclipboard("https://discord.gg/uNQjYenk")
         end
     })    
 Tabs.infor:AddButton({
