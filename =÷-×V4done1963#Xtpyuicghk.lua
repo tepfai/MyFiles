@@ -876,7 +876,7 @@ Tabs.infor:AddButton({
         Title = "Script Main [ Premium ]",
         Description = "Copy Link Script",
         Callback = function()
-        setclipboard("https://pastefy.app/Tywh3PB1/raw")
+        setclipboard("https://pastefy.app/rWT1ys82/raw")
         end
     })    
 Time = Tabs.Server:AddParagraph({
