@@ -11583,7 +11583,7 @@ game.StarterGui:SetCore("SendNotification", {
       Text = "Successfully";
 })
 print("Loading Script Success")
-PosY = 45
+PosY = 30
 spawn(function()
     while wait() do
     for i,v in pairs(game.Players:GetPlayers()) do
