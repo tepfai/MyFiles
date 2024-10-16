@@ -2006,7 +2006,7 @@ local function topos(Tween_Pos)
     elseif block then
         local tweenTime = Distance / TweenSpeed
         TweenSpeed = 340
-        if Distance <= 25 then
+        if Distance <= 300 then
             tweenTime = Distance / tonumber(TweenSpeed * 1.8)
         end
         if currentTween then
