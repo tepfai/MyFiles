@@ -1984,7 +1984,7 @@ task.spawn(function()
     return TpPos
   end
 end)
-TweenSpeed = 350
+TweenSpeed = 340
 local TweenService = game:GetService("TweenService")
 local TeleportPos
 local currentTween 
@@ -2005,7 +2005,7 @@ local function topos(Tween_Pos)
         task.wait(1) 
     elseif block then
         local tweenTime = Distance / TweenSpeed
-        TweenSpeed = 350
+        TweenSpeed = 340
         if Distance <= 300 then
             tweenTime = Distance / tonumber(TweenSpeed * 1.8)
         end
