@@ -4137,7 +4137,7 @@ task.spawn(function()
 		end)
 	end
     end)  
-SelectSpeedAttack = (SelectSpeedAttack or "0")
+SelectSpeedAttack = (SelectSpeedAttack or "0.1")
 SelectedFastAttackMode = {"0.25","0.225","0.2","0.175","0.15","0.1","0"}
 function ChangeModeFastAttack(SelectSpeedAttack)
 	if SelectSpeedAttack == "0.25" then
