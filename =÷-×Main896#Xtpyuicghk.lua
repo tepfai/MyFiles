@@ -2158,56 +2158,6 @@ Shop:AddParagraph({
         Title = "Fighting Shop",
         Content = "---------------------"
 })
-shoppinglist = {'Select','Black Leg','electro','Fishman Karate','Dragon Claw','SuperHuman','Death Step','Dragon Talon','Sharkman Karate','Electric Claw','GodHuman','Sanguine Art'}
-shopaholic = Shop:AddDropdown("shopaholic", {
-    Title = "Melee",
-    Description = "",
-    Values = shoppinglist,
-    Multi = false,
-    Default = 1,
-})
-shopaholic:SetValue("Select")
-shopaholic:OnChanged(function(Value)
-_G.shopping = Value
-saveSettings()
-if _G.shopping == "Black Leg" then
-    wait(0)
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyBlackLeg")
-elseif _G.shopping == "electro" then
-    wait(0)
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectro")
-elseif _G.shopping == "Fishman Karate" then
-    wait(0)
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyFishmanKarate")
-elseif _G.shopping == "Dragon Claw" then
-    wait(0)
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","1")
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","2")
-elseif _G.shopping == "SuperHuman" then
-    wait(0)
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySuperhuman")
-elseif _G.shopping == "Death Step" then
-    wait(0)
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDeathStep")
-elseif _G.shopping == "Dragon Talon" then
-    wait(0)
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDragonTalon")
-elseif _G.shopping == "Sharkman Karate" then
-    wait(0)
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySharkmanKarate",true)
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySharkmanKarate")
-elseif _G.shopping == "electric claw" then
-    wait(0)
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectricClaw")
-elseif _G.shopping == "GodHuman" then
-    wait(0)
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGodhuman")
-elseif _G.shopping == "Sanguine Art" then
-     wait(0)
-     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySanguineArt", true)
-     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySanguineArt")
-end
-end)
 Shop:AddParagraph({
         Title = "Abilities Shop",
         Content = "---------------------"
