@@ -2158,45 +2158,6 @@ Shop:AddParagraph({
         Title = "Fighting Shop",
         Content = "---------------------"
 })
-shopgun = {'Select','cutlass','Bizarre Rifle','kabucha','cannon','refined flintlock','slingshot'}
-shopaholicsss = Shop:AddDropdown("shopaholicsss", {
-    Title = "Gun",
-    Description = "",
-    Values = shopgun,
-    Multi = false,
-    Default = 1,
-})
-shopaholicsss:SetValue("Select")
-shopaholicsss:OnChanged(function(Value)
-_G.shopping = Value
-saveSettings()
-if _G.shopping == "cutlass" then
-    wait(0)
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Cutlass")
-elseif _G.shopping == "Bizarre Rifle" then
-    wait(0)
-game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Ectoplasm", "Ectoplasm", "1")
-elseif _G.shopping == "kabucha" then
-    wait(0)
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Slingshot","1")
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Slingshot","2")
-elseif _G.shopping == "cannon" then
-    wait(0)
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Cannon")
-elseif _G.shopping == "refined flintlock" then
-    wait(0)
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Refined Flintlock")
-elseif _G.shopping == "flintlock" then
-    wait(0)
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Flintlock")
-elseif _G.shopping == "musket" then
-    wait(0)
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Musket")
-elseif _G.shopping == "slingshot" then
-    wait(0)
-    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Slingshot")
-end
-end)
 shoppinglist = {'Select','Black Leg','electro','Fishman Karate','Dragon Claw','SuperHuman','Death Step','Dragon Talon','Sharkman Karate','Electric Claw','GodHuman','Sanguine Art'}
 shopaholic = Shop:AddDropdown("shopaholic", {
     Title = "Melee",
