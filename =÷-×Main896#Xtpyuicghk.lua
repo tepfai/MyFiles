@@ -2213,7 +2213,7 @@ local args = {[1] = "CyborgTrainer", [2] = "Buy"}
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
     end
 })
-ToggleLegendarySword = Shop:AddToggle("ToggleLegendarySword", {Title = "Auto Buy Legendary Sword", Default = _G.AutoBuyLegendarySword})
+local ToggleLegendarySword = Shop:AddToggle("ToggleLegendarySword", {Title = "Auto Buy Legendary Sword", Default = _G.AutoBuyLegendarySword})
 ToggleLegendarySword:OnChanged(function(Value)
     _G.AutoBuyLegendarySword = Value
     saveSettings()
@@ -2237,12 +2237,12 @@ spawn(function()
         end
     end
 end)
-ToggleLegendarySword = Shop:AddToggle("ToggleLegendarySword", {Title = "Auto Buy Legendary Sword Hop", Default = _G.AutoBuyLegendarySword_Hop})
+local ToggleLegendarySword = Shop:AddToggle("ToggleLegendarySword", {Title = "Auto Buy Legendary Sword Hop", Default = _G.AutoBuyLegendarySword_Hop})
 ToggleLegendarySword:OnChanged(function(Value)
     _G.AutoBuyLegendarySword_Hop = Value
     saveSettings()
 end)
-ToggleHakiColor = Shop:AddToggle("ToggleHakiColor", {
+local ToggleHakiColor = Shop:AddToggle("ToggleHakiColor", {
     Title = "Auto Buy Haki Color",
     Description = "", 
     Default = false })
@@ -2266,7 +2266,7 @@ spawn(function()
         end 
     end
 end)
-ToggleHakiColor = Shop:AddToggle("ToggleHakiColor", {
+local ToggleHakiColor = Shop:AddToggle("ToggleHakiColor", {
     Title = "Auto Buy Haki Color Hop",
     Description = "", 
     Default = false })
@@ -2274,7 +2274,7 @@ ToggleHakiColor:OnChanged(function(Value)
     _G.Auto_Buy_Enchancement_Hop = Value
     saveSettings()
 end)        
-ToggleTradeBone = Shop:AddToggle("ToggleTradeBone", {Title = "Auto Random Bone", Default = _G.Auto_Random_Bone })
+local ToggleTradeBone = Shop:AddToggle("ToggleTradeBone", {Title = "Auto Random Bone", Default = _G.Auto_Random_Bone })
 ToggleTradeBone:OnChanged(function(Value)
     _G.Auto_Random_Bone = Value
     saveSettings()
