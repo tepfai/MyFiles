@@ -1,4 +1,4 @@
---([[ScriptNewHiruHub]])--
+--([[ScriptNewHiruHubPro]])--
 print("HiruHub○nTop")
 print("Loading Script")
 game.StarterGui:SetCore(
